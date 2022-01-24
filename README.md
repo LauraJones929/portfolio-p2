@@ -53,6 +53,12 @@ View Live Site
 
 
 ### Manual Testing
+Manual testing was carried out once the main features of the game had been implemented onto the webpage. After deploying the page early on in the project, I was able to use my iPhone to do manual testing across Google Chrome for iOS and Safari, as well as constant testing on desktop via Chrome Dev Tools.
+
+Upon the first test I noticed that the background image was not showing on either mobile browsers, however the image was showing on the desktop.
+Also, on Google chrome the buttons (game.html) css styling was not being applied, but was on Safari.
+
+
 
 ### Additional Testing
 
