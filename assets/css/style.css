@@ -3,8 +3,9 @@
 
 body {
     background-image: url(/assets/images/heartleaves.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
+    appearance: none;
 }
 
 /* --- Landing Page -- */
@@ -74,6 +75,17 @@ img {
     background-color: #ffffa1;
 }
 
+.your-score {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #dedcb5;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px black;
+    background-color: rgb(54,112,45, 0.6);
+}
+
 @media screen and (min-width: 1024px) {
     img {
         margin-top: 40px;
@@ -81,5 +93,11 @@ img {
 
     .option-btn {
         font-size: 40px;
+    }
+
+    .your-score {
+        font-size: 40px;
+        margin-top: 40px;
+        padding: 30px 0;
     }
   }
