@@ -59,7 +59,7 @@ button > a {
     border-radius: 20px;
 }
   
-img {
+.image {
     width: 100%;
     height: 100%;
     margin: 10px 0 40px 0;
@@ -87,7 +87,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-    img {
+    .image {
         margin-top: 40px;
     }
 
