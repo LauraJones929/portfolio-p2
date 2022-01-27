@@ -8,43 +8,32 @@ body {
     appearance: none;
 }
 
-/* --- Landing Page -- */
-
-.main-page {
-    margin: 100px 20px;
-    background-color: rgb(54,112,45, 0.6);
-    border-radius: 20px;
+.row-gutter-fix {
+    --bs-gutter-x: 0;
 }
 
 .heading {
     padding: 50px 20px 20px 20px;
     font-family: 'Indie Flower', cursive;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     color: #dedcb5;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 5px 5px 5px black;
 }
 
-#play-btn {
-    padding: 30px 0 50px 0;
+#play-btn, #next-btn {
+    padding: 30px 0 10px 0;
     text-align: center;
 }
 
-.play {
+#play, #next {
     font-size: 2rem;
     width: 80%;
     font-family: 'Indie Flower', cursive;
     font-weight: 700;
 }
-
-button > a {
-    text-decoration: none;
-    color: black;
-}
-
-/* -- Game Page --*/
 
 .question {
     margin-top: 30px;
@@ -61,23 +50,24 @@ button > a {
   
 .image {
     width: 100%;
-    height: 100%;
     margin: 10px 0 40px 0;
   }
 
 .option-btn {
-    width: 100%;
     margin: 10px 0;
-    border-radius: 10px;
-    border-width: medium;
+    width: 80%;
+    padding: 2px;
     font-family: "Dongle", sans-serif;
     font-size: 30px;
+    border-radius: 10px;
+    border-width: medium;
     background-color: #ffffa1;
 }
 
-.your-score {
+#your-score {
+    margin-top: 20px;
     font-family: 'Indie Flower', cursive;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     color: #dedcb5;
     text-align: center;
@@ -86,7 +76,16 @@ button > a {
     background-color: rgb(54,112,45, 0.6);
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+
+    .question {
+        font-size: 60px;
+    }
+
     .image {
         margin-top: 40px;
     }
@@ -95,8 +94,8 @@ button > a {
         font-size: 40px;
     }
 
-    .your-score {
-        font-size: 40px;
+    #your-score {
+        font-size: 50px;
         margin-top: 40px;
         padding: 30px 0;
     }

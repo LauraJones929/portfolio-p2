@@ -1,117 +1,62 @@
-let question = [{
-    id: "q-1",
-    imgFile: "assets/images/ash.jpg",
-    a: [{ text: "Ash", isCorrect: false },
-        { text: "Oak", isCorrect: true },
-        { text: "Sycamore", isCorrect: false },
-        { text: "Holly", isCorrect: false }
-    ]},
-    {id: "q-2",
-    imgFile: "assets/images/holly.jpg",
-    a: [{ text: "Oak", isCorrect: false },
-        { text: "Sycamore", isCorrect: false },
-        { text: "Holly", isCorrect: true },
-        { text: "Birch", isCorrect: false }
-        ]},
-    {id: "q-3",
-    imgFile: "assets/images/birch.jpg",
-    a: [{ text: "Oak", isCorrect: false },
-        { text: "Sycamore", isCorrect: false },
-        { text: "Holly", isCorrect: false },
-        { text: "Birch", isCorrect: true }
-        ]},
-    {id: "q-4",
-    imgFile: "assets/images/sycamore.jpg",
-    a: [{ text: "Sycamore", isCorrect: true },
-        { text: "Birch", isCorrect: false },
-        { text: "Ash", isCorrect: false },
-        { text: "Oak", isCorrect: false }
-        ]},
-    {id: "q-5",
-    imgFile: "assets/images/ash.jpg",
-    a: [{ text: "Holly", isCorrect: false },
-        { text: "Oak", isCorrect: false },
-        { text: "Birch", isCorrect: false },
-        { text: "Ash", isCorrect: true }
-        ]},
+let playButton = document.getElementById('play');
+let heading = document.getElementById('heading');
+let questionContainer = document.getElementById('question-container');
+let imageContainer = document.getElementById('image-container');
+let gameContainer = document.getElementById('game-container');
+let nextButton = document.getElementById('next-button');
+let scoreContainer = document.getElementById('score');
+
+playButton.addEventListener('click', playQuiz);
+
+function playQuiz() {
+    console.log("Started");
+    playButton.classList.add('hide');
+    heading.classList.add('hide');
+    questionContainer.classList.remove('hide');
+    imageContainer.classList.remove('hide');
+    gameContainer.classList.remove('hide');
+    nextButton.classList.remove('hide');
+    scoreContainer.classList.remove('hide');
+}
+
+/*let image = document.getElementsByClassName('image');
+
+nextButton.addEventListener('click', selectNext);*/
+
+function selectNext() {
+    
+}
+
+function selectAnswer() {
+
+}
+
+let questions = [
+    {
+        image: ('assets/images/birch.jpg'),
+        options: [
+            {text: 'Ash', correct: false},
+            {text: 'Birch', correct: true},
+            {text: 'Sycamore', correct: false},
+            {text: 'Holly', correct: false}
+        ]
+    }
 ]
 
-let startQuiz = true;
-  
-function iterate(id) {
+/*let images = ["assets/images/birch.jpg",
+"assets/images/holly.jpg",
+"assets/images/oak.jpg",
+"assets/images/sycamore.jpg"];
 
-    // Getting the image for the question
-    let image = document.getElementById("image");
+let currentImage = 0;
 
-    // Setting the question image
-    image.innerText = question[id].imgFile;
+function selectNext() {
+    currentImage += 1;
 
-    // Getting the options
-    let opt1 = document.getElementById('option-1');
-    let opt2 = document.getElementById('option-2');
-    let opt3 = document.getElementById('option-3');
-    let opt4 = document.getElementById('option-4');
-
-    // Getting text for each option
-    opt1.innerText = question[id].a[0].text;
-    opt2.innerText = question[id].a[1].text;
-    opt3.innerText = question[id].a[2].text;
-    opt4.innerText = question[id].a[3].text;
-
-    // Providing the true or false value to the options
-    opt1.value = question[id].a[0].isCorrect;
-    opt2.value = question[id].a[1].isCorrect;
-    opt3.value = question[id].a[2].isCorrect;
-    opt4.value = question[id].a[3].isCorrect;
-
-    // Getting each option button
-    let button = document.getElementsByClassName("option-btn");
-  
-    // Render if correct or incorrect
-    function answered(event) {
-        if (button == "true") {
-            console.log("correct");
-        } else {
-            console.log("incorrect");
-        }
+    //loop back to the first image
+    if(currentImage >= images.length) {
+        currentImage = 0;
     }
-    answered.addEventListener('click', button);
-}
 
-if (startQuiz) {
-    iterate("q-1");
-}
-
-/*function startGame() {
-
-}
-
-function optionSelected() {
-
-}
-
-function addScore() {
-
-}
-
-function questionOne() {
-
-}
-
-function questionTwo() {
-
-}
-
-function questionThree() {
-
-}
-
-function questionFour() {
-
-}
-
-function questionFive() {
-
-}
-
-*/
+    document.getElementById("image").src = images[currentImage];
+}*/

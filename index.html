@@ -10,27 +10,67 @@
     <title>Love Leaves</title>
 </head>
 <body>
-    <section class="container">
-        <div class="row">
-            <div class="col-12">
-                <header class="main-page">
-                    <div class="row main-menu">
-                        <div class="col-12">
-                            <h1 class="heading">Love Leaves
-                            </h1>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                            <div id="play-btn">
-                                <button onclick="window.location.href='game.html'" type="button" class="btn-lg btn-warning play">
-                                    Play
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+    <div class="container">
+        <div class="row hide" id="question-container">
+            <div class="col-12 col-6 col-lg-4 mx-auto">
+                <h2 class="question">
+                    Which tree does this leaf come from?
+                </h2>
             </div>
         </div>
-    </section>
-    <script src="assets/js/script.js"></script>
+        <div class="row hide" id="image-container">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <img class="image" src="assets/images/oak.jpg" alt="Oak leaf">
+            </div>
+        </div>
+        <div class="row hide" id="game-container">
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-1">
+                    Option 1
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-2">
+                    Option 2
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-3">
+                    Option 3
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-4">
+                    Option 4
+                </button>
+            </div>
+        </div>
+        <div class="row" id="heading">
+            <div class="col-12">
+                <h1 class="heading">Love Leaves
+                </h1>
+            </div>
+        <div class="row row-gutter-fix">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto" id="play-btn">
+                <button type="button" class="btn-lg btn-warning" id="play">
+                Play
+                </button>
+            </div>
+        </div>
+        </div>
+        <div class="row hide" id="next-button">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto" id="next-btn">
+                <button type="button" class="btn-lg btn-warning" id="next">
+                Next
+                </button>
+            </div>
+        </div>
+        <div class="row hide" id="score">
+            <p id="your-score">
+            Your Score: <span></span>/5
+            </p>
+        </div>
+    </div>
+    <script defer src="assets/js/script.js"></script>
 </body>
 </html>
