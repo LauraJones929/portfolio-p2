@@ -3,8 +3,11 @@ Love Leaves - Live Game Application
 View Live Site
 
 ## Business Objectives
-I have created an online game that is targeted towards children of primary education ages (5-11 yrs). After working in a primary school for the past 8 years I have a good idea of the curriculum and what apps and games come in useful for children's learning. I have seen children use apps and online games to advance their learning in every subject. One lesson that stood out for me over the years was a Science lesson where the children would have to identify the leaves of different trees. They would go out with a clipboard, work sheet with various pictures of leaves on and they would have to find that type of tree in the school garden.
+I have created an online game that is targeted towards children of primary education ages (5-11 yrs). After working in a primary school for the past 8 years I have a good idea of the curriculum and what apps and games come in useful for children's learning. I have seen children use apps and online games to advance their learning in every subject. One lesson that stood out for me over the years was a Science lesson where the children would have to identify the leaves from different trees. They would go out with a clipboard, work sheet with various pictures of leaves on and they would have to find that type of tree in the school garden.
 The game I have created would allow the children to take their learning further and implement that knowledge.
+
+I have chosen to use a mobile first approach as children have better access mobile devices and tablets rather than desktops.
+The webpage is also easier to navigate on a mobile design as the children don't have to think using a mouse or keyboard to play.
 
 ## Homepage Mockup
 
@@ -18,12 +21,17 @@ The game I have created would allow the children to take their learning further 
 "As a first time visitor, I want to test my knowledge of various trees."
 
 ### Returning Visitor Goals
-"As a returning visitor, 
+"As a returning visitor, I want to attempt to beat my previous score."
+"As a returning visitor, I want my child to continue to improve their knowledge on different trees."
 
 ### Frequent Visitor Goals
+"As a frequent visitor, I like to try to beat my previous scores."
+"As a frequent visitor, I want to use the links on each answer button to find out more information about each tree."
 
 
 ## Design
+
+
 ### Colour Scheme
 
 
