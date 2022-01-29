@@ -33,15 +33,19 @@ function selectAnswer() {
 
 let questions = [
     {
-        image: ('assets/images/birch.jpg'),
+        image: 'assets/images/ash.jpg',
         options: [
-            {text: 'Ash', correct: false},
-            {text: 'Birch', correct: true},
-            {text: 'Sycamore', correct: false},
-            {text: 'Holly', correct: false}
+            {text: 'Ash'},
+            {text: 'Oak'},
+            {text: 'Sycamore'},
+            {text: 'Holly'}
         ]
     }
 ]
+
+for (let correctAnswer = 0; correctAnswer < questions.length; correctAnswer++) {
+    console.log(questions.options.text[i]);
+}
 
 /*let images = ["assets/images/birch.jpg",
 "assets/images/holly.jpg",
