@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Love Leaves</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="question-container">
+            <div class="col-12 col-6 col-lg-4 mx-auto">
+                <h2 class="question">
+                    Which tree does this leaf come from?
+                </h2>
+            </div>
+        </div>
+        <div class="row" id="image-container">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <img id="image" src="" alt="Leaf image">
+            </div>
+        </div>
+        <div class="row" id="game-container">
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-1">
+                    Option 1
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-2">
+                    Option 2
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-3">
+                    Option 3
+                </button>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <button type="submit" class="option-btn btn-lg" id="option-4">
+                    Option 4
+                </button>
+            </div>
+        </div>
+    <!---    <div class="row hide" id="next-button">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto" id="next-btn">
+                <button type="button" class="btn-lg btn-warning" id="next">
+                Next
+                </button>
+            </div>
+        </div> -->
+        <div class="row" id="score">
+            <p id="your-score">
+            Your Score: <span></span>/5
+            </p>
+        </div>
+    </div>
+    <script defer src="assets/js/script.js"></script>
+</body>
+</html>

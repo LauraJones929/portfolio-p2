@@ -23,12 +23,12 @@ body {
     text-shadow: 5px 5px 5px black;
 }
 
-#play-btn, #next-btn {
+#play-btn {
     padding: 30px 0 10px 0;
     text-align: center;
 }
 
-#play, #next {
+#play {
     font-size: 2rem;
     width: 80%;
     font-family: 'Indie Flower', cursive;
@@ -48,9 +48,10 @@ body {
     border-radius: 20px;
 }
   
-.image {
+#image {
     width: 100%;
-    margin: 10px 0 40px 0;
+    height: 300px;
+    margin: 10px 0 30px 0;
   }
 
 .option-btn {
@@ -74,10 +75,6 @@ body {
     text-transform: uppercase;
     text-shadow: 3px 3px 5px black;
     background-color: rgb(54,112,45, 0.6);
-}
-
-.hide {
-    display: none;
 }
 
 @media screen and (min-width: 1024px) {
