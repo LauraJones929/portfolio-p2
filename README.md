@@ -9,7 +9,7 @@ The game I have created would allow the children to take their learning further 
 I have chosen to use a mobile first approach as children have better access mobile devices and tablets rather than desktops.
 The webpage is also easier to navigate on a mobile design as the children don't have to think using a mouse or keyboard to play.
 
-## Homepage Mockup
+## Mockup
 
 # User Experience (UX)
 ## User Stories
@@ -42,28 +42,37 @@ I used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46
 - The question container uses a background colour of **rgb(54,112,45, 0.6)** and a text colour of **#dedcb5**.
 - Button elements use the **#dedcb5** to tie in with the question text.
 - The score container uses **rgb(54,112,45, 0.6)** and the text inside uses **#dedcb5**, again with a text shadow (black).
-- The 'Play' and 'Next' buttons use Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
+- The 'Play' button uses Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
 
 ![](/assets/images/play-btn.png)
 
-![](/assets/images/next-btn.png)
-
 
 ### Typography
-Fonts are importedinto the CSS file via Google Fonts.
+Fonts are imported into the CSS file via Google Fonts.
 
 The font styles that I have chosen have a fun yet simple characteristic feel to them, so the user can easily read the text if they are of a younger age.
+- 'Indie Flower'
+- 'Dongle'
+
+The main heading/title and the 'Play' button uses the 'Indie Flower' as I think the first impression when entering the webpage should have a fun, welcoming feel to it.
+
+Other text such as the question and the buttons use 'Dongle'. This font is easier to read as it is more simplistic but still has an element of childishness to it.
 
 
 ### Imagery
 
 
 
-### Wireframes
+## Wireframes
 
+Below are 3 links to show the initial drafts for each screen size. They show how I expect the responsivity between devices to go and how the structure of each page will look.
+
+The project is designed with a mobile first approach. I felt this was more appropriate as the game is aimed at children for educational purposes.
 
 [Tablet Wireframe](wireframes/tablet.md)
+
 [Mobile Wireframe](wireframes/mobile.md)
+
 [Desktop Wireframe](wireframes/desktop.md)
 
 
