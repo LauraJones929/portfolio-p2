@@ -105,13 +105,13 @@ let questionData = [
     },
     {
         "image-question" : "assets/images/sycamore.jpg",
-        "options" : ["Sycamore", "Holly", "Ash", "Oak"],
+        "options" : ["Oak", "Holly", "Ash", "Sycamore"],
         "answer" : "Sycamore"
     },
   ]
   window.addEventListener("load", function() {
 
-    let currentQuestion = parseInt(localStorage.getItem('location')) || 0;
+    let currentQuestion = parseInt(sessionStorage.getItem('location')) || 0;
     console.log(parseInt(currentQuestion));
 
     let imageQuestion = document.getElementById("image");
@@ -131,8 +131,9 @@ let questionData = [
             console.log('You are correct!');
             this.style.backgroundColor = "green";
             currentQuestion += 1;
-            localStorage.setItem('location', currentQuestion);
+            sessionStorage.setItem('location', currentQuestion);
             window.location.reload();
+            incrementScore();
         } else {
             console.log('Try again!');
             this.style.backgroundColor = "red";
@@ -144,8 +145,9 @@ let questionData = [
             console.log('You are correct!');
             this.style.backgroundColor = "green";
             currentQuestion += 1;
-            localStorage.setItem('location', currentQuestion);
+            sessionStorage.setItem('location', currentQuestion);
             window.location.reload();
+            incrementScore();
         } else {
             console.log('Try again!');
             this.style.backgroundColor = "red";
@@ -157,8 +159,9 @@ let questionData = [
             console.log('You are correct!');
             this.style.backgroundColor = "green";
             currentQuestion += 1;
-            localStorage.setItem('location', currentQuestion);
+            sessionStorage.setItem('location', currentQuestion);
             window.location.reload();
+            incrementScore();
         } else {
             console.log('Try again!');
             this.style.backgroundColor = "red";
@@ -169,11 +172,26 @@ let questionData = [
             console.log('You are correct!');
             this.style.backgroundColor = "green";
             currentQuestion += 1;
-            localStorage.setItem('location', currentQuestion);
+            sessionStorage.setItem('location', currentQuestion);
             window.location.reload();
+            incrementScore();
         } else {
             console.log('Try again!');
             this.style.backgroundColor = "red";
         }
   })
 });
+
+function incrementScore() {
+    let score = parseInt(document.getElementById("your-score").innerText);
+    document.getElementById("your-score").innerText = ++score;
+}
+
+function endQuiz() {
+    if (button4 === true) {
+        document.getElementById("question-container").classList.add("hide");
+        document.getElementById("image-container").classList.add("hide");
+        document.getElementById("game-container").classList.add("hide");
+        document.getElementById("end-game").classList.remove("hide");
+    }
+}
