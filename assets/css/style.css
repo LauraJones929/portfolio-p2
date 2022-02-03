@@ -65,7 +65,7 @@ body {
     background-color: #ffffa1;
 }
 
-#your-score {
+#score-p, #end-game {
     margin-top: 20px;
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
@@ -75,6 +75,10 @@ body {
     text-transform: uppercase;
     text-shadow: 3px 3px 5px black;
     background-color: rgb(54,112,45, 0.6);
+}
+
+.hide {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
