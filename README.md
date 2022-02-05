@@ -81,15 +81,15 @@ The project is designed with a mobile first approach. I felt this was more appro
 
 ## Features
 
+
 ### **Existing Features**
 
 ### **Features yet to implement**
 
-## Technologies Used
+## Languages & Technologies Used
 - HTML - Used to build the main structure of the webpage.
 - CSS - Used to style the content of the webpage.
 - JavaScript - Used to make the webpage/game interactive for the user.
-### **Languages**
 - Google Fonts - Imbedded in the CSS, Google fonts are used throughout the body of the text.
 - Balsamiq - Used to create wireframes for the project.
 - Chrome Dev Tools - Used to oversee the development of the website and debugging.
@@ -99,13 +99,14 @@ The project is designed with a mobile first approach. I felt this was more appro
 - Multi Device Mockup Generator (techsini) - To create an image of what the project will look like on various devices. TechSini.com
 - Coolors Contrast Checker - To test colours throughout the site for whether or not they will produce good user experience.
 - W3C Markup Validator - To check for any HTML or CSS errors.
+- JShint Validator - To check for any errors in my JavaScript code.
 
-## Testing
+# Testing
 
 Most testing was carried out via Google Chrome browser and Chrome Dev Tools for responsivity and checking to see if the JavaScript code was working as expected, throughout the process of building the project. I also tested the site on an iPhone 12 for responsivity, this included Google Chrome and Safari browsers.
 
 
-### **Manual Testing**
+## Manual Testing
 
 Manual testing was carried out once the main features of the game had been implemented onto the webpage. After deploying the page early on in the project, I was able to use my iPhone to do manual testing across Google Chrome for iOS and Safari, as well as constant testing on desktop via Chrome Dev Tools.
 
@@ -127,25 +128,72 @@ Also, on Google chrome the buttons (game.html) css styling was not being applied
     - When a button is clicked incorrectly, it turns red and the user is given further chances until answered correctly. (As this game is intended for young children, I wanted to keep answering the questions as simple as possible for learning purposes.)
 
 
+## Additional Testing
+I used the [a11y Contrast Checker](https://color.a11y.com/Contrast/) to test all colours throughout the project.
+
+As you can see there is a problem detected with the #DEDCB5 against the white on the 'Love Leaves' heading. I am happy to leave these colours as they are, as the shadow styling around the text makes it a lot more visible. I can confidently say that the heading is easily read-able.
+
+![](assets/images/contrast-check.png)
 
 
+I used the [W3C Markup Validation](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to ensure that there were no syntax errors throughout the project.
 
-### Additional Testing
-
-
-Colour Contrast Checker (link to results)
-
+W3C Markup Results(screenshot)
+W3C CSS Results(screenshot)
 
 
-W3C Markup Results(link)
-W3C CSS Results(link)
-User Story Testing(link)
+## User Story Testing
+
 User Story Testing(link)
 
 ### Known Bugs and Fixes
+- When iterating through the array for each question, the image would not change along with the options (answers). This was resolved with support from my tutor by adding the following code:
 
-### Deployment
+![](assets/images/reload.png)
 
-### Credits
+This line of code was added to each button event listener and ran whenever a question was answered correctly. *HTML lines 135, 149, 163, 176.*
 
-### Personal Development
+- The above bug fix then created another issue. On each reload the score that was supposed to be incremented with each correct answer, was reverting back to 0.
+
+# Deployment
+
+This project was created using Gitpod, which enabled me to stage and commit the files via Git (version control) and pushed into the respository on Github.
+
+## To deploy the project on Github:
+- Select the repository you wish to deploy.
+- Click the Settings tab within that repository.
+- In the Settings, scroll down and select Pages.
+- In the Source section, click Branch and select the main option, click Save.
+- The URL for the deployed project is now saved in Pages.
+
+## Forking the Github Repository:
+Choose to fork the repository by making a copy. You can then make changes to the copy without it affecting the original repository.
+
+- Select the repository you wish to fork.
+- In the top right corner of the page (under your account icon) there will be an option to Fork.
+- By selecting Fork you will now have a copy of the respository in your own Github account.
+
+## Cloning the Github Repository:
+- Select the repository you wish to clone locally.
+- Above the files, locate the Code dropdown menu.
+- Select and copy the link appropriately (HTTPS, SSH, Github CLI).
+- Open the terminal and change the directory to where you want the cloned version to be located.
+- Type git clone and paste the copied link.
+- Press Enter to create local clone.
+
+# Credits
+
+## Code
+- Stackoverflow Forums
+
+- Mentor - Felipe Souza Alarcon
+
+## Media
+- Pixabay
+    - Providing free stock images to use in my webpage (background image and images used in the questions)
+
+## Acknowledgements
+- Tutors at Code Institute
+- Slack Community Members
+
+# Personal Development

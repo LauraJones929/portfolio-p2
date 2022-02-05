@@ -30,9 +30,15 @@ body {
 
 #play {
     font-size: 2rem;
-    width: 80%;
+    width: 60%;
     font-family: 'Indie Flower', cursive;
     font-weight: 700;
+}
+
+#play-link {
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 
 .question {
