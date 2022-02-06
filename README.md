@@ -34,7 +34,7 @@ The main colours for this project are tones of green and cream, to match the the
 
 I used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5) to test these colours. I chose to go ahead and continue to use these colours as the result was 'good' when using large text. Also the shadow effect on the text makes it stand out a lot more against the green.
 
-![](/assets/images/colour-check.png)
+![](/documentation/images/testing/colour-check.png)
 
 
 - The background image is an image of a green hedge with yellow tones coming through as well as darker shadow tones, so finding the right colour for the foreground elements was important so that it didn't clash with the background image.
@@ -44,7 +44,7 @@ I used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46
 - The score container uses **rgb(54,112,45, 0.6)** and the text inside uses **#dedcb5**, again with a text shadow (black).
 - The 'Play' button uses Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
 
-![](/assets/images/play-btn.png)
+![](/documentation/images/features/play-btn.png)
 
 
 ### **Typography**
@@ -133,7 +133,7 @@ I used the [a11y Contrast Checker](https://color.a11y.com/Contrast/) to test all
 
 As you can see there is a problem detected with the #DEDCB5 against the white on the 'Love Leaves' heading. I am happy to leave these colours as they are, as the shadow styling around the text makes it a lot more visible. I can confidently say that the heading is easily read-able.
 
-![](assets/images/contrast-check.png)
+![](documentation/images/testing/contrast-check.png)
 
 
 I used the [W3C Markup Validation](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to ensure that there were no syntax errors throughout the project.
@@ -149,7 +149,7 @@ User Story Testing(link)
 ### Known Bugs and Fixes
 - When iterating through the array for each question, the image would not change along with the options (answers). This was resolved with support from my tutor by adding the following code:
 
-![](assets/images/reload.png)
+![](documentation/images/testing/reload.png)
 
 This line of code was added to each button event listener and ran whenever a question was answered correctly. *HTML lines 135, 149, 163, 176.*
 
