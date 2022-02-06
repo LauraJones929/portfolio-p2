@@ -87,13 +87,29 @@ Changes made after creating initial drafts (wireframes) :
 - I had wanted to include a clickable link on the alert that gave the user more information about that tree, by using a Wikipedia API. However after researching how to do this, I felt as though it was a little out of my depth. This could maybe be something I can implement in further projects in the future when I am more confident with API's.
 
 ## Various Mockups
-
 ## Features
+### Existing Features
+- **Play Button** - The user chooses when they want to begin the game. The first question will not show until the user clicks the 'Play' Button.
+![](/documentation/images/features/play.png)
 
+- **Images** - The image of the leaf changes with each question. The user must decide which tree the leaf is from by recognition.
+![](/documentation/images/features/leaf-image.png)
 
-### **Existing Features**
+- **Options buttons** - The user has a choice of 4 options to choose from. Only one is correct. Upon clicking the correct answer, they will automatically be taken to the next question. If an incorrect answer is clicked, they are still taken to the next question, however their score will not be incremented.
+![](/documentation/images/features/buttons.png)
 
-### **Features yet to implement**
+- **Score count** - The users' score is counted (correct answers only). If they answer correctly, the score is incremented by 1. If the user answers incorrectly, the score does not change.
+![](/documentation/images/features/score.jpg)
+
+- **Total score** - Once each question has been answered, the user will come to the end of the game and they receive a message informing them of how many they answered correctly.
+![](/documentation/images/features/total-score.png)
+
+- **Restart button** - Under the total score message, there is a clickable button that gives the user the opportunity to restart the game, taking them back to the first question.
+![](/documentation/images/features/restart.png)
+
+### Features yet to implement
+- Once I am more confident using API's, I would like to add a clickable link that appears in an alert when the user answers a question correctly. The link provides further information about that tree, sourced from a Wikipedia API.
+- I would like to make this game part of a bigger game that has different topics to choose from. This game being one of them. Each game would be educational and targeted at the same age group (primary school ages). For example, the landing page would consist of a contents section containing different games, each with a different topic (eg. Which animal lives here? Whose habitat is this? What food group is this?)
 
 ## Languages & Technologies Used
 - HTML - Used to build the main structure of the webpage.
