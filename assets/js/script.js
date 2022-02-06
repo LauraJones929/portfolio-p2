@@ -1,4 +1,6 @@
-let questionData = [
+window.addEventListener("load", function () {
+    
+    let questionData = [
     {
         "image-question": "assets/images/ash.jpg",
         "options": ["Oak", "Holly", "Ash", "Sycamore"],
@@ -22,49 +24,72 @@ let questionData = [
 ];
 
 
-// Track current index in questionData array, and track score
-let currentQuestion = 0;
-let score  = 0;
+    // Track current index in questionData array, and track score
+    let currentQuestion = 0;
+    let score  = 0;
 
-// Get buttons
-const options = [...document.getElementsByClassName('option-btn')];
+    // Get buttons
+    const options = [...document.getElementsByClassName('option-btn')];
 
-// Start Game
-function init() {
+    // Start Game
+    function init() {
     displayQuestion()
-};
-init();
+    };
+    init();
 
-// Listen for button clicks and run checkAnswer
-options.forEach(btn => {
-    btn.addEventListener('click', (event) => checkAnswer(event))
-});
-
-// Displays question by getting the image and text for each option
-function displayQuestion() {
-    document.getElementById("image").src = questionData[currentQuestion]['image-question'];
-    questionData[currentQuestion].options.forEach((opt, i) => {
-        options[i].innerText = opt;
+    // Listen for button clicks and run checkAnswer
+    options.forEach(btn => {
+        btn.addEventListener('click', (event) => checkAnswer(event))
     });
-};
 
-// Checks answer
-function checkAnswer(event) {
-    if (event.target.innerText === questionData[currentQuestion].answer) {
-        document.getElementById("your-score").innerText = ++score;
-    } else {
+    // Displays question by getting the image and text for each option
+    function displayQuestion() {
+        document.getElementById("image").src = questionData[currentQuestion]['image-question'];
+        questionData[currentQuestion].options.forEach((opt, i) => {
+            options[i].innerText = opt;
+        });
+    };
+
+    // Checks answer
+    function checkAnswer(event) {
+        if (event.target.innerText === questionData[currentQuestion].answer) {
+            document.getElementById("your-score").innerText = ++score;
+        } else {
+        }
+
+        // If there are more questions, display next Q after 1 second
+        if (currentQuestion !== questionData.length - 1) {
+            setTimeout(() => {
+                currentQuestion++;
+                displayQuestion();
+            }, 1000);
+        } else {
+            // Disable buttons
+            options.forEach(btn => btn.style.pointerEvents = 'none')
+            endGame();
+            // TODO: tally score etc..
+        }
+    };
+
+    // End of game
+    function endGame () {
+        document.getElementById('question-container').classList.add('hide');
+        document.getElementById('image-container').classList.add('hide');
+        document.getElementById('game-container').classList.add('hide'); 
+        document.getElementById('score').classList.add('hide'); 
+        document.getElementById('end-game').classList.remove('hide');
+        document.getElementById('restart').classList.remove('hide');
+
+        let result = document.getElementById('result');
+    
+        result.innerText = `You answered `+ parseInt(document.getElementById('your-score').innerText) + ` correct!`
+    };
+
+
+    function restartGame(event) {
+        window.location.reload();
+        init();
     }
-
-    // If there are more questions, display next Q after 1 second
-    if (currentQuestion !== questionData.length - 1) {
-        setTimeout(() => {
-            currentQuestion++;
-            displayQuestion();
-        }, 1000);
-    } else {
-        // Disable buttons
-        options.forEach(btn => btn.style.pointerEvents = 'none')
-
-        // TODO: tally score etc..
-    }
-};
+    let restart = document.getElementById('restart-btn');
+    restart.addEventListener('click', restartGame);
+});

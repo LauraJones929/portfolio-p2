@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Indie+Flower&display=swap');
 
-
+/* ----- Various styling --- */
 body {
-    background-image: url(/assets/images/heartleaves.jpg);
+    /*background-image: url(/assets/images/heartleaves.jpg);
     background-size: cover;
     background-position: center;
-    appearance: none;
+    appearance: none;*/
+    height: 100vh;
+    width: 100vw;
+    background: url("../images/heartleaves.jpg") center center;
+    background-size: cover;
 }
 
 .row-gutter-fix {
     --bs-gutter-x: 0;
 }
 
+.hide {
+    display: none;
+}
+
+/* ----- Landing Page --- */
+
 .heading {
+    margin-top: 100px;
     padding: 50px 20px 20px 20px;
     font-family: 'Indie Flower', cursive;
     font-size: 70px;
@@ -28,7 +39,7 @@ body {
     text-align: center;
 }
 
-#play {
+#play, #restart-btn {
     font-size: 2rem;
     width: 60%;
     font-family: 'Indie Flower', cursive;
@@ -41,7 +52,9 @@ body {
     color: black;
 }
 
-.question {
+/* ----- Game Page --- */
+
+.question, #score-p, #result {
     margin-top: 30px;
     padding: 20px;
     background-color: rgb(54,112,45, 0.6);
@@ -71,21 +84,35 @@ body {
     background-color: #ffffa1;
 }
 
-#score-p, #end-game {
+#score-p, #result {
     margin-top: 20px;
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
     font-weight: 700;
-    color: #dedcb5;
-    text-align: center;
     text-transform: uppercase;
-    text-shadow: 3px 3px 5px black;
-    background-color: rgb(54,112,45, 0.6);
 }
 
-.hide {
-    display: none;
+/* ----- Results Page --- */
+
+#result {
+    line-height: 55px;
+    font-size: 40px;
 }
+
+#end-game {
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        flex-direction: row;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+}
+
+#restart {
+    padding-top: 50px;
+}
+
+/* ----- Media Queries --- */
 
 @media screen and (min-width: 1024px) {
 
