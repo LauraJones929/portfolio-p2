@@ -3,7 +3,7 @@
 [View Live Site](https://laurajones929.github.io/portfolio-p2/)
 
 ## Business Objectives
-I have created an online game that is targeted towards children of primary education ages (5-11 yrs). After working in a primary school for the past 8 years I have a good idea of the curriculum and what apps and games come in useful for children's learning. I have seen children use apps and online games to advance their learning in every subject. One lesson that stood out for me over the years was a Science lesson where the children would have to identify the leaves from different trees. They would go out with a clipboard, work sheet with various pictures of leaves on and they would have to find that type of tree in the school garden.
+I have created an online game that is targeted towards children of primary education ages (5-11 yrs). After working in a primary school for the past 8 years I have a good idea of the curriculum and what apps and games come in useful for children's learning. I have seen children use apps and online games to advance their learning in every subject. One lesson that stood out for me over the years was a Science lesson where the children would have to identify the leaves from different trees. They would go out with a clipboard, and work sheet with various pictures of leaves on and they would have to find that type of tree in the school garden.
 The game I have created would allow the children to take their learning further and implement that knowledge.
 
 I have chosen to use a mobile first approach as children have better access mobile devices and tablets rather than desktops.
@@ -24,8 +24,6 @@ The webpage is also easier to navigate on a mobile design as the children don't 
 
 ### **Frequent Visitor Goals**
 - "As a frequent visitor, I like to try to beat my previous scores."
-- "As a frequent visitor, I want to use the links on each answer button to find out more information about each tree."
-
 
 ## Design
 
@@ -42,10 +40,8 @@ I used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46
 - The question container uses a background colour of **rgb(54,112,45, 0.6)** and a text colour of **#dedcb5**.
 - Button elements use the **#dedcb5** to tie in with the question text.
 - The score container uses **rgb(54,112,45, 0.6)** and the text inside uses **#dedcb5**, again with a text shadow (black).
-- The 'Play' button uses Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
-
-![](/documentation/images/features/play-btn.png)
-
+- The 'Play' and 'Play Again' buttons use Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
+- The results container uses the same theme of the green background **rgb(54,112,45, 0.6)** and **#dedcb5** text.
 
 ### **Typography**
 Fonts are imported into the CSS file via Google Fonts.
@@ -54,15 +50,17 @@ The font styles that I have chosen have a fun yet simple characteristic feel to 
 - 'Indie Flower'
 - 'Dongle'
 
-The main heading/title and the 'Play' button uses the 'Indie Flower' as I think the first impression when entering the webpage should have a fun, welcoming feel to it.
+![](/documentation/images/features/play-btn.png)
+![](/documentation/images/features/question.png)
 
-Other text such as the question and the buttons use 'Dongle'. This font is easier to read as it is more simplistic but still has an element of childishness to it.
+The main heading/title and the control buttons use the 'Indie Flower' as I think the first impression when entering the webpage should have a fun, welcoming feel to it.
+
+Other text such as the question, answer buttons and results use 'Dongle'. This font is easier to read as it is more simplistic but still has an element of childishness to it.
 
 
 ### **Imagery**
 - Background image - [Pixabay](https://pixabay.com/)
 - All question images are sourced from [Pixabay](https://pixabay.com/)
-
 
 ## Wireframes
 
@@ -76,6 +74,17 @@ The project is designed with a mobile first approach. I felt this was more appro
 
 [Desktop Wireframe](wireframes/desktop.md)
 
+Changes made after creating initial drafts (wireframes) :
+
+- I decided to put a score container at the bottom of the page that increments the score after each correct answer. I think this would create a better user experience by giving immediate, visual feedback to the user when they are playing.
+
+- When all questions have been answered, a results container appears giving the user their total score.
+
+- Under the results container is a 'Play Again' button which gives the user the opportunity to play again. Clicking this button resets the game and reloads the first question.
+
+- I have not included the alerts after a question is answered, as it felt like an unnecessary extra button click before moving onto the next question.
+
+- I had wanted to include a clickable link on the alert that gave the user more information about that tree, by using a Wikipedia API. However after researching how to do this, I felt as though it was a little out of my depth. This could maybe be something I can implement in further projects in the future when I am more confident with API's.
 
 ## Various Mockups
 
