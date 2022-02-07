@@ -86,6 +86,8 @@ window.addEventListener("load", function () {
         } else {
         }
 
+    // Tutor support on how to iterate through questions
+
         // If there are more questions, display next Q after 1 second
         if (currentQuestion !== questionData.length - 1) {
             setTimeout(() => {
