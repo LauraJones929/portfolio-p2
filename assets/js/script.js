@@ -1,28 +1,57 @@
 window.addEventListener("load", function () {
     
     let questionData = [
-    {
+        {
         "image-question": "assets/images/ash.jpg",
-        "options": ["Oak", "Holly", "Ash", "Sycamore"],
+        "options": ["Oak", "Chestnut", "Ash", "Maple"],
         "answer": "Ash"
-    },
-    {
+        },
+        {
         "image-question": "assets/images/holly.jpg",
         "options": ["Holly", "Oak", "Sycamore", "Ash"],
         "answer": "Holly"
-    },
-    {
+        },
+        {
         "image-question": "assets/images/oak.jpg",
-        "options": ["Sycamore", "Oak", "Holly", "Ash"],
+        "options": ["Maple", "Oak", "Holly", "Ash"],
         "answer": "Oak"
-    },
-    {
+        },
+        {
         "image-question": "assets/images/sycamore.jpg",
         "options": ["Oak", "Holly", "Ash", "Sycamore"],
         "answer": "Sycamore"
-    },
-];
-
+        },
+        {
+        "image-question": "assets/images/birch.jpg",
+        "options": ["Ash", "Sycamore", "Birch", "Holly"],
+        "answer": "Birch"
+        },
+        {
+        "image-question": "assets/images/beech.jpg",
+        "options": ["Beech", "Ash", "Willow", "Oak"],
+        "answer": "Beech"
+        },
+        {
+        "image-question": "assets/images/pine.jpg",
+        "options": ["Ash", "Oak", "Pine", "Birch"],
+        "answer": "Pine"
+        },
+        {
+        "image-question": "assets/images/chestnut.jpg",
+        "options": ["Pine", "Birch", "Chestnut", "Sycamore"],
+        "answer": "Chestnut"
+        },
+        {
+        "image-question": "assets/images/maple.jpg",
+        "options": ["Oak", "Maple", "Beech", "Pine"],
+        "answer": "Maple"
+        },
+        {
+        "image-question": "assets/images/willow.jpg",
+        "options": ["Sycamore", "Chestnut", "Holly", "Willow"],
+        "answer": "Willow"
+        },
+    ];
 
     // Track current index in questionData array, and track score
     let currentQuestion = 0;
