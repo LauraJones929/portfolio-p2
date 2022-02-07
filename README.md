@@ -89,19 +89,21 @@ Changes made after creating initial drafts (wireframes) :
 ## Various Mockups
 ## Features
 ### Existing Features
+- **Title** - The 'Love Leaves' title was inspired by the Code Institute walkthrough projects. I thought the use of alliteration worked well for the title of this web application.
 - **Play Button** - The user chooses when they want to begin the game. The first question will not show until the user clicks the 'Play' Button.
 ![](/documentation/images/features/play.png)
 
-- **Images** - The image of the leaf changes with each question. The user must decide which tree the leaf is from by recognition.
+- **Images** - The image of the leaf changes with each question. There is a total of 10 questions to answer. The user must decide which tree the leaf is from by recognition.
 ![](/documentation/images/features/leaf-image.png)
 
 - **Options buttons** - The user has a choice of 4 options to choose from. Only one is correct. Upon clicking the correct answer, they will automatically be taken to the next question. If an incorrect answer is clicked, they are still taken to the next question, however their score will not be incremented.
+(As this game is intended for young children, I wanted to keep answering the questions as simple as possible for learning purposes.)
 ![](/documentation/images/features/buttons.png)
 
-- **Score count** - The users' score is counted (correct answers only). If they answer correctly, the score is incremented by 1. If the user answers incorrectly, the score does not change.
-![](/documentation/images/features/score.jpg)
+- **Score count** - The users' score is counted (correct answers only). If they answer correctly, the score is incremented by 1. If the user answers incorrectly, the score does not change. There are 10 questions to be answered, therefore the score is out of 10.
+![](/documentation/images/features/score.png)
 
-- **Total score** - Once each question has been answered, the user will come to the end of the game and they receive a message informing them of how many they answered correctly.
+- **Total score** - Once all 10 questions have been answered, the user will come to the end of the game and they receive a message informing them of how many they answered correctly.
 ![](/documentation/images/features/total-score.png)
 
 - **Restart button** - Under the total score message, there is a clickable button that gives the user the opportunity to restart the game, taking them back to the first question.
@@ -138,23 +140,38 @@ Manual testing was carried out once the main features of the game had been imple
 Upon the first test I noticed that the background image was not showing on either mobile browsers, however the image was showing on the desktop.
 Also, on Google chrome the buttons (game.html) css styling was not being applied, but was on Safari.
 
+After altering the CSS for the background image, the image rendered on the mobile browsers with no issue.
+![](/documentation/images/testing/bground-image-bugfix.png)
+*CSS lines 4-10*
+
 - Landing Page
     - The background image is visible and centered to create the desired "nature" look.
-    - 'Play' button sits underneath the game title as takes user to the game page when clicked.
+    - 'Play' button sits underneath the game title and takes user to the game page when clicked.
 
 - Game Page
-    - The first question is shown when the page loads.
+    - The first question (image and 4 options) is shown when the page loads.
 
 - Question Images
-    - The image changes when the user gets an answer right, ready for the next question.
+    - The image changes when an option button is clicked, ready for the next question.
 
 - Answer Buttons
-    - When a button is clicked correctly, it turns green and the user is directed to the next question, with a new image and new arrangement of answers.
-    - When a button is clicked incorrectly, it turns red and the user is given further chances until answered correctly. (As this game is intended for young children, I wanted to keep answering the questions as simple as possible for learning purposes.)
+    - With every new question, there is a new arrangement of options.
+    - When a button is clicked correctly, the score increments by 1 and the next question loads, with a new image and new arrangement of answers.
+    - When a button is clicked incorrectly, the score does not increment and the next question is loaded.
+
+- Score Tracking
+    - With each correct answer selected, the score tracker increments by 1.
+    - With each incorrect answer, the score does not change.
+
+- Results Page
+    - When all 10 questions have been answered, a message appears showing how many questions were answered correctly.
+    - The 'Play Again' button is clickable and directs back to the first question.
 
 
 ## Additional Testing
-I used the [a11y Contrast Checker](https://color.a11y.com/Contrast/) to test all colours throughout the project.
+Initially used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5) to test the text colour against the background colour (See **Colours** section).
+
+I then used the [a11y Contrast Checker](https://color.a11y.com/Contrast/) to test all colours throughout the project.
 
 As you can see there is a problem detected with the #DEDCB5 against the white on the 'Love Leaves' heading. I am happy to leave these colours as they are, as the shadow styling around the text makes it a lot more visible. I can confidently say that the heading is easily read-able.
 
@@ -176,7 +193,9 @@ User Story Testing(link)
 
 ![](documentation/images/testing/reload.png)
 
-This line of code was added to each button event listener and ran whenever a question was answered correctly. *HTML lines 135, 149, 163, 176.*
+This line of code was added to each button event listener and ran whenever a question was answered correctly.
+
+*script.js lines 135, 149, 163, 176.*
 
 - The above bug fix then created another issue. On each reload the score that was supposed to be incremented with each correct answer, was reverting back to 0.
 
@@ -207,6 +226,7 @@ Choose to fork the repository by making a copy. You can then make changes to the
 - Press Enter to create local clone.
 
 # Credits
+- **Code Institute Walkthrough Projects**  - Inspiration for title of the web application, 'Love Leaves'
 
 ## Code
 - Stackoverflow Forums
