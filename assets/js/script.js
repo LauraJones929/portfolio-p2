@@ -62,13 +62,13 @@ window.addEventListener("load", function () {
 
     // Start Game
     function init() {
-    displayQuestion()
-    };
+    displayQuestion();
+    }
     init();
 
     // Listen for button clicks and run checkAnswer
     options.forEach(btn => {
-        btn.addEventListener('click', (event) => checkAnswer(event))
+        btn.addEventListener('click', (event) => checkAnswer(event));
     });
 
     // Displays question by getting the image and text for each option
@@ -77,7 +77,7 @@ window.addEventListener("load", function () {
         questionData[currentQuestion].options.forEach((opt, i) => {
             options[i].innerText = opt;
         });
-    };
+    }
 
     // Checks answer
     function checkAnswer(event) {
@@ -94,11 +94,10 @@ window.addEventListener("load", function () {
             }, 1000);
         } else {
             // Disable buttons
-            options.forEach(btn => btn.style.pointerEvents = 'none')
+            options.forEach(btn => btn.style.pointerEvents = 'none');
             endGame();
-            // TODO: tally score etc..
         }
-    };
+    }
 
     // End of game
     function endGame () {
@@ -111,8 +110,8 @@ window.addEventListener("load", function () {
 
         let result = document.getElementById('result');
     
-        result.innerText = `You answered `+ parseInt(document.getElementById('your-score').innerText) + ` correct!`
-    };
+        result.innerText = `You answered `+ parseInt(document.getElementById('your-score').innerText) + ` correct!`;
+    }
 
 
     function restartGame(event) {
