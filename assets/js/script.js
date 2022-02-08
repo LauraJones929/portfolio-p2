@@ -1,3 +1,5 @@
+// Research found on Melvin George Blogs for correct use of the load event
+// (See credits in README.md file)
 window.addEventListener("load", function () {
     
     let questionData = [
@@ -86,14 +88,14 @@ window.addEventListener("load", function () {
         } else {
         }
 
-    // Tutor support on how to iterate through questions
+    // Tutor support on how to iterate through questions array and setting timer
 
         // If there are more questions, display next Q after 1 second
         if (currentQuestion !== questionData.length - 1) {
             setTimeout(() => {
                 currentQuestion++;
                 displayQuestion();
-            }, 1000);
+            }, 500);
         } else {
             // Disable buttons
             options.forEach(btn => btn.style.pointerEvents = 'none');
@@ -101,7 +103,7 @@ window.addEventListener("load", function () {
         }
     }
 
-    // End of game
+    // End of game + total score message
     function endGame () {
         document.getElementById('question-container').classList.add('hide');
         document.getElementById('image-container').classList.add('hide');
@@ -115,7 +117,7 @@ window.addEventListener("load", function () {
         result.innerText = `You answered `+ parseInt(document.getElementById('your-score').innerText) + ` correct!`;
     }
 
-
+    // Restarts game
     function restartGame(event) {
         window.location.reload();
         init();
