@@ -5,9 +5,11 @@ Most testing was carried out via Google Chrome browser and Chrome Dev Tools for 
 I used the Lighthouse tool in Chrome Dev Tools, which gave me a fully updated report of the overall performance of the webpage:
 
 Landing Page
+
 ![Lighthouse Index](/documentation/images/testing/lighthouse-index.png)
 
 Game Page
+
 ![Lighthouse Game](/documentation/images/testing/lighthouse-game.png)
 
 
@@ -20,6 +22,7 @@ Also, on Google chrome the buttons (game.html) css styling was not being applied
 
 After altering the CSS for the background image, the image rendered on the mobile browsers with no issue.
 ![Background image bug fix](/documentation/images/testing/bground-image-bugfix.png)
+
 *CSS lines 4-10*
 
 - Landing Page

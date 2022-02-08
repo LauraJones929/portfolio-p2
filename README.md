@@ -53,6 +53,7 @@ The font styles that I have chosen have a fun yet simple characteristic feel to 
 - 'Dongle'
 
 ![Play button](/documentation/images/features/play-btn.png)
+
 ![Question](/documentation/images/features/question.png)
 
 The main heading/title and the control buttons use the 'Indie Flower' as I think the first impression when entering the webpage should have a fun, welcoming feel to it.
@@ -91,7 +92,6 @@ Changes made after creating initial drafts (wireframes) :
 ![Various Mockups](/documentation/images/testing/mockup2.png)
 *Again, when testing on mobile devices (Google Chrome and Safari) the text, image and buttons were positioned evenly and consistently on the screen. The image produced with the Techsini Mockup, the elements appear to be squashed and smaller. This is not the case on the live site.*
 
-## Various Mockups
 ## Features
 ### Existing Features
 - **Title** - The 'Love Leaves' title was inspired by the Code Institute walkthrough projects. I thought the use of alliteration worked well for the title of this web application.
