@@ -1,6 +1,14 @@
 # Testing
 
-Most testing was carried out via Google Chrome browser and Chrome Dev Tools for responsivity and checking to see if the JavaScript code was working as expected, throughout the process of building the project. I also tested the site on an iPhone 12 for responsivity, this included Google Chrome and Safari browsers.
+Most testing was carried out via Google Chrome browser and Chrome Dev Tools for responsivity and checking to see if the JavaScript code was working as expected, throughout the process of building the project. Microsoft Edge and Firefox was also used for testing overall performance and responsivity. I also tested the site on an iPhone 12 for responsivity, this included Google Chrome and Safari browsers.
+
+I used the Lighthouse tool in Chrome Dev Tools, which gave me a fully updated report of the overall performance of the webpage:
+
+Landing Page
+![Lighthouse Index](/documentation/images/testing/lighthouse-index.png)
+
+Game Page
+![Lighthouse Game](/documentation/images/testing/lighthouse-game.png)
 
 
 ## Manual Testing
@@ -70,3 +78,17 @@ Game Page
 ## User Story Testing
 
 ## Known Bugs and Fixes
+- On the Landing Page I noticed the Play Button was slightly off center even though I had used Bootstrap grids for positioning and styled the button so that it was in the centre, using *text-align: center*.
+    - This was resolved by searching for the bug using Chrome Dev Tools. It showed that there was *bs-gutter-x* being applied that was making the button off centre. I added a class to the buttom element so that I was able to target this issue with CSS styling and re-centre the button.
+
+    ![gutter-fix](/documentation/images/testing/gutter-fix.png)
+
+    *Lines 12-14.*
+
+    - When using the W3C Markup Validator, I received an error stating that I should not have an anchor element within a button element.
+        - This was resolved by using the *onclick* attribute on the button element, giving it the value of a link directly to *game.html*.
+
+## Bugs yet to fix
+There is a slight delay when waiting for the next image to load, especially if playing for the first time and the images aren't cached. Images for the next question will usually load a second or two after an answer button is clicked.
+
+In my JavaScript code, I have set a timer of 500 milliseconds before the next question is loaded. The button text is loading after the set time, but the image is slightly delayed.
