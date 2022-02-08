@@ -9,7 +9,9 @@ The game I have created would allow the children to take their learning further 
 I have chosen to use a mobile first approach as children have better access mobile devices and tablets rather than desktops.
 The webpage is also easier to navigate on a mobile design as the children don't have to think using a mouse or keyboard to play.
 
-## Mockup
+![Landing Page Mockup](/documentation/images/testing/mockup1.png)
+
+*When I manually tested the project on mobile devices, the text and button size/positioning was different to the image the mockup produced. On mobile, the elements are slightly larger to accomodate the screen size and are more centered.*
 
 # User Experience (UX)
 ## User Stories
@@ -86,6 +88,9 @@ Changes made after creating initial drafts (wireframes) :
 
 - I had wanted to include a clickable link on the alert that gave the user more information about that tree, by using a Wikipedia API. However after researching how to do this, I felt as though it was a little out of my depth. This could maybe be something I can implement in further projects in the future when I am more confident with API's.
 
+![Various Mockups](/documentation/images/testing/mockup2.png)
+*Again, when testing on mobile devices (Google Chrome and Safari) the text, image and buttons were positioned evenly and consistently on the screen. The image produced with the Techsini Mockup, the elements appear to be squashed and smaller. This is not the case on the live site.*
+
 ## Various Mockups
 ## Features
 ### Existing Features
@@ -130,7 +135,7 @@ Changes made after creating initial drafts (wireframes) :
 
 # Testing
 
-For all tests, please view the [TESTING.md file.](documentation/TESTING.md)
+For all tests, please view the [TESTING.md](documentation/TESTING.md) file.
 
 # Deployment
 
@@ -162,16 +167,21 @@ Choose to fork the repository by making a copy. You can then make changes to the
 - **Code Institute Walkthrough Projects**  - Inspiration for title of the web application, 'Love Leaves'
 
 ## Code
-- Stackoverflow Forums
 
-- Mentor - Felipe Souza Alarcon
+- Code Institute Tutors
+    - Support with how to iterate through the questions array and how to set a timer before loading the next question.
+
+- [Melvin George Blogs](https://melvingeorge.me/blog/wait-till-html-loads-javascript)
+    - When researching whether to use the load event in the window object or the DOMContentLoaded event in the document object before running JavaScript.
 
 ## Media
 - Pixabay
     - Providing free stock images to use in my webpage (background image and images used in the questions)
 
 ## Acknowledgements
-- Tutors at Code Institute
+- Mentor - Felipe Souza Alarcon
+    - Providing best practise advice from a professional point of view.
 - Slack Community Members
+    - For offering their time and responding in times of need.
 
 # Personal Development
