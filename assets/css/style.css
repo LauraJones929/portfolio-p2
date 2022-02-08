@@ -96,11 +96,6 @@ body {
 
 #end-game {
     padding-top: 100px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        flex-direction: row;
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
 }
 
 #restart {
