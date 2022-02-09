@@ -127,4 +127,6 @@ Game Page
 ## Bugs yet to fix
 There is a slight delay when waiting for the next image to load, especially if playing for the first time and the images aren't cached. Images for the next question will usually load a second or two after an answer button is clicked.
 
-In my JavaScript code, I have set a timer of 500 milliseconds before the next question is loaded. The button text is loading after the set time, but the image is slightly delayed.
+In my JavaScript code, I have set a timer of 500 milliseconds before the next question is loaded. The button text is loading with the set time, but the image is slightly delayed.
+
+However when I am testing the project on my mobile phone, the delay isn't there and each image is rendering on its set time as expected. Perhaps this issue lies with my own desktop.
