@@ -79,6 +79,39 @@ Game Page
 ![JShint validator](/documentation/images/testing/js-valid2.png)
 
 ## User Story Testing
+### First Time Visitor Goals
+- "As a first time visitor, I want to know what the game is about when first landing on the page, for my child to use."
+    - Upon landing on the webpage, the user is able to clearly see what the topic of the game is. The title 'Love Leaves' and the background image is bold and eye catching for the user to see right away.
+    - There is a brief introduction to the game below the title, hinting at what the quiz is about with an enticing question, "Do you recognise the leaves?".
+- "As a first time visitor, I want my child to be able to access the game quickly through the click of a single button."
+    - The quiz is accessible via one click of a button (below the game introduction), so that it is easy and simple for children to use.
+
+![Landing Page](/documentation/images/testing/userstory1.png)
+
+- "As a first time visitor, I want to test my knowledge of various trees."
+    - There are 10 questions, each showing a different image of a leaf belonging to a type of tree. The user has a choice of 4 answers for each question.
+
+![Question](/documentation/images/testing/userstory2.png)
+
+### Returning Visitor Goals
+- "As a returning visitor, I want to attempt to beat my previous score."
+    - The chance to restart the game is immediate after completing a current game, or the user can return to the game at a later date.
+
+![Total score](/documentation/images/features/total-score.png)
+
+- "As a returning visitor, I want my child to continue to improve their knowledge on different trees."
+    - This game is accessible and available for anyone to use and any time.
+
+### Frequent Visitor Goals
+- "As a frequent visitor, I like to try to beat my previous scores."
+    - The game is available to play an unlimited amount of times.
+    - I would like to include a scoreboard in the future so that users can keep track of their scores.
+
+- "As a frequent visitor, I use this website for educational purposes in my classroom setting to help the children retain their knowledge of trees in a fun way."
+    - The entire game is child friendly and school friendly. It is kept simple so that children of younger ages can access and play the game with no or little issues.
+    - Images are clear and text/buttons are extremely visible.
+
+![Game](/documentation/images/testing/userstory3.png)
 
 ## Known Bugs and Fixes
 - On the Landing Page I noticed the Play Button was slightly off center even though I had used Bootstrap grids for positioning and styled the button so that it was in the centre, using *text-align: center*.
