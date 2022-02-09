@@ -45,7 +45,7 @@ body {
 
 /* ----- Game Page --- */
 
-.question, #score-p, #result {
+#game-intro, .question, #score-p, #result {
     margin-top: 30px;
     padding: 20px;
     background-color: rgb(54,112,45, 0.6);
@@ -56,6 +56,14 @@ body {
     line-height: 35px;
     text-shadow: 3px 3px 5px black;
     border-radius: 20px;
+}
+
+#game-intro {
+    margin: 0 10px;
+}
+
+#game-intro p {
+    margin-bottom: 0;
 }
   
 #image {
@@ -104,7 +112,13 @@ body {
 
 /* ----- Media Queries --- */
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) {
+    .heading {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .question {
         margin-top: 40px;
         font-size: 60px;
@@ -135,7 +149,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     .question {
         font-size: 70px;
