@@ -48,6 +48,9 @@ After altering the CSS for the background image, the image rendered on the mobil
     - When all 10 questions have been answered, a message appears showing how many questions were answered correctly.
     - The 'Play Again' button is clickable and directs back to the first question.
 
+- 404 Page
+    - I have tested the error page and it is working as expected when encountering a non-existent page. When I clicked the link to return, I was redirected back to the main page.
+
 
 ## Additional Testing
 Initially used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5) to test the text colour against the background colour (See **Colours** section).

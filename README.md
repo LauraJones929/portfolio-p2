@@ -125,6 +125,10 @@ Changes made after creating initial drafts (wireframes) :
 
 ![Restart button](/documentation/images/features/restart.png)
 
+- **404 Page** - I have created a 404 error page that the user will be directed to when they encounter a non-existent page. The link directs users back to the mainpage when clicked.
+
+![404 Page](/documentation/images/testing/404.png)
+
 ### Features yet to implement
 - Once I am more confident using API's, I would like to add a clickable link that appears in an alert when the user answers a question correctly. The link provides further information about that tree, sourced from a Wikipedia API.
 - I would like to make this game part of a bigger game that has different topics to choose from. This game being one of them. Each game would be educational and targeted at the same age group (primary school ages). For example, the landing page would consist of a contents section containing different games, each with a different topic (eg. Which animal lives here? Whose habitat is this? What food group is this?)
