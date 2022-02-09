@@ -190,6 +190,9 @@ Choose to fork the repository by making a copy. You can then make changes to the
 - [Melvin George Blogs](https://melvingeorge.me/blog/wait-till-html-loads-javascript)
     - When researching whether to use the load event in the window object or the DOMContentLoaded event in the document object before running JavaScript.
 
+- [Draft.Dev Blog](https://draft.dev/learn/github-pages-404)
+    - I was able to include a 404 page on my website thanks to finding this blog which showed me how to do this.
+
 ## Media
 - Pixabay
     - Providing free stock images to use in my webpage (background image and images used in the questions)
@@ -199,6 +202,7 @@ Choose to fork the repository by making a copy. You can then make changes to the
     - Providing best practise advice from a professional point of view.
 - Slack Community Members
     - For offering their time and responding in times of need.
+    - For sharing their knowledge with the community.
 
 # Personal Development
 I found learning JavaScript code quite challenging at times. When I was going over the lessons from Code Institute I was understanding the content and how the code works, however when it came to putting JavaScript code together for this project, I found it quite difficult.
