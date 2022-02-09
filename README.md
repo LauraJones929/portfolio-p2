@@ -101,22 +101,28 @@ Changes made after creating initial drafts (wireframes) :
 ### Existing Features
 - **Title** - The 'Love Leaves' title was inspired by the Code Institute walkthrough projects. I thought the use of alliteration worked well for the title of this web application.
 - **Play Button** - The user chooses when they want to begin the game. The first question will not show until the user clicks the 'Play' Button.
+
 ![Play button](/documentation/images/testing/userstory1.png)
 
 - **Images** - The image of the leaf changes with each question. There is a total of 10 questions to answer. The user must decide which tree the leaf is from by recognition.
+
 ![Question image](/documentation/images/features/leaf-image.png)
 
 - **Options buttons** - The user has a choice of 4 options to choose from. Only one is correct. Upon clicking the correct answer, they will automatically be taken to the next question. If an incorrect answer is clicked, they are still taken to the next question, however their score will not be incremented.
 (As this game is intended for young children, I wanted to keep answering the questions as simple as possible for learning purposes.)
+
 ![Answer buttons](/documentation/images/features/buttons.png)
 
 - **Score count** - The users' score is counted (correct answers only). If they answer correctly, the score is incremented by 1. If the user answers incorrectly, the score does not change. There are 10 questions to be answered, therefore the score is out of 10.
+
 ![Score container](/documentation/images/features/score.png)
 
 - **Total score** - Once all 10 questions have been answered, the user will come to the end of the game and they receive a message informing them of how many they answered correctly.
+
 ![Total score message](/documentation/images/features/total-score.png)
 
 - **Restart button** - Under the total score message, there is a clickable button that gives the user the opportunity to restart the game, taking them back to the first question.
+
 ![Restart button](/documentation/images/features/restart.png)
 
 ### Features yet to implement
