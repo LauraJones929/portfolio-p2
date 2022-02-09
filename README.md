@@ -11,7 +11,9 @@ The webpage is also easier to navigate on a mobile design as the children don't 
 
 ![Landing Page Mockup](/documentation/images/testing/mockup1.png)
 
-*When I manually tested the project on mobile devices, the text and button size/positioning was different to the image the mockup produced. On mobile, the elements are slightly larger to accomodate the screen size and are more centered.*
+*When I manually tested the project on mobile devices, the text and button size/positioning was different to the image the mockup produced. On mobile, the elements are slightly larger to accomodate the screen size and are more centered. The image below is a screenshot from my own mobile phone (using Safari) :*
+
+![Mobile Screenshot](/documentation/images/testing/mob-screenshot.png)
 
 # User Experience (UX)
 ## User Stories
@@ -91,7 +93,9 @@ Changes made after creating initial drafts (wireframes) :
 - I had wanted to include a clickable link on the alert that gave the user more information about that tree, by using a Wikipedia API. However after researching how to do this, I felt as though it was a little out of my depth. This could maybe be something I can implement in further projects in the future when I am more confident with API's.
 
 ![Various Mockups](/documentation/images/testing/mockup2.png)
-*Again, when testing on mobile devices (Google Chrome and Safari) the text, image and buttons were positioned evenly and consistently on the screen. The image produced with the Techsini Mockup, the elements appear to be squashed and smaller. This is not the case on the live site.*
+*Again, when testing on mobile devices (Google Chrome and Safari) the text, image and buttons were positioned evenly and consistently on the screen. The image produced with the Techsini Mockup, the elements appear to be squashed and smaller. This is not the case on the live site. See image below which is a screenshot from my own mobile phone whilst playing the game (using Safari).*
+
+![Mobile Screenshot](/documentation/images/testing/mob-screenshot2.png)
 
 ## Features
 ### Existing Features
