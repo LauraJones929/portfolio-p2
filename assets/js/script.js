@@ -86,6 +86,7 @@ window.addEventListener("load", function () {
         if (event.target.innerText === questionData[currentQuestion].answer) {
             document.getElementById("your-score").innerText = ++score;
         } else {
+            console.log("Try again!")
         }
 
     // Tutor support on how to iterate through questions array and setting timer
