@@ -73,6 +73,12 @@ Landing Page
 Game Page
 ![Game Page](/documentation/images/testing/html-valid2.png)
 
+After adding the new features of the game introduction and the 404 error page, I ran all validator tests again to ensure no errors were found. All CSS and JavaScript remained free of errors, however the HTML validator showed one error consisting of a stray end div tag. (See below)
+
+I fixed this error by removing the end div tag and the validator reverted back to showing no errors.
+
+![Error](/documentation/images/testing/html-valid3.png)
+
 ### CSS
 ![CSS Validator](/documentation/images/testing/css-valid.png)
 
