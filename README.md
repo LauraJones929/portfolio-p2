@@ -26,6 +26,7 @@ The webpage is also easier to navigate on a mobile design as the children don't 
 
 ### **Frequent Visitor Goals**
 - "As a frequent visitor, I like to try to beat my previous scores."
+- "As a frequent visitor, I use this website for educational purposes in my classroom setting to help the children retain their knowledge of trees in a fun way."
 
 ## Design
 
@@ -39,7 +40,7 @@ I used the [Coolors Contrast Checker](https://coolors.co/contrast-checker/112a46
 
 - The background image is an image of a green hedge with yellow tones coming through as well as darker shadow tones, so finding the right colour for the foreground elements was important so that it didn't clash with the background image.
 - The 'Love Leaves' heading uses **#dedcb5** with a text shadow of **5px**.
-- The question container uses a background colour of **rgb(54,112,45, 0.6)** and a text colour of **#dedcb5**.
+- The question container and game introduction uses a background colour of **rgb(54,112,45, 0.6)** and a text colour of **#dedcb5**.
 - Button elements use the **#dedcb5** to tie in with the question text.
 - The score container uses **rgb(54,112,45, 0.6)** and the text inside uses **#dedcb5**, again with a text shadow (black).
 - The 'Play' and 'Play Again' buttons use Bootstrap's 'btn-warning' class (yellow), with the text using 'black'.
@@ -96,7 +97,7 @@ Changes made after creating initial drafts (wireframes) :
 ### Existing Features
 - **Title** - The 'Love Leaves' title was inspired by the Code Institute walkthrough projects. I thought the use of alliteration worked well for the title of this web application.
 - **Play Button** - The user chooses when they want to begin the game. The first question will not show until the user clicks the 'Play' Button.
-![Play button](/documentation/images/features/play.png)
+![Play button](/documentation/images/testing/userstory1.png)
 
 - **Images** - The image of the leaf changes with each question. There is a total of 10 questions to answer. The user must decide which tree the leaf is from by recognition.
 ![Question image](/documentation/images/features/leaf-image.png)
@@ -117,6 +118,7 @@ Changes made after creating initial drafts (wireframes) :
 ### Features yet to implement
 - Once I am more confident using API's, I would like to add a clickable link that appears in an alert when the user answers a question correctly. The link provides further information about that tree, sourced from a Wikipedia API.
 - I would like to make this game part of a bigger game that has different topics to choose from. This game being one of them. Each game would be educational and targeted at the same age group (primary school ages). For example, the landing page would consist of a contents section containing different games, each with a different topic (eg. Which animal lives here? Whose habitat is this? What food group is this?)
+- I would like to include a scoreboard so users can keep track of their previous scores.
 
 ## Languages & Technologies Used
 - HTML - Used to build the main structure of the webpage.
@@ -185,3 +187,5 @@ Choose to fork the repository by making a copy. You can then make changes to the
     - For offering their time and responding in times of need.
 
 # Personal Development
+I found learning JavaScript code quite challenging at times. When I was going over the lessons from Code Institute I was understanding the content and how the code works, however when it came to putting JavaScript code together for this project, I found it quite difficult.
+Following on from this, in my own time I am going to further my practise and knowledge of JavaScript via YouTube videos and other research found online so that I am getting better the more I do practise and to ensure anything I have learned so far does not slip.
